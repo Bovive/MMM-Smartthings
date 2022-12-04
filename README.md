@@ -25,6 +25,12 @@ cd MMM-Smartthings
 npm install
 ```
 
+## Updating
+Go to the module’s folder inside MagicMirror modules folder and pull the latest version from GitHub and install:
+```
+git pull
+```
+
 ### Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
