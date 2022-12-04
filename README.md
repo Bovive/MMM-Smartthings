@@ -55,7 +55,7 @@ var config = {
 | Option                | Description
 |-----------------      |-----------
 | `personalAccessToken` | *Required* Setup your personal access token at https://account.smartthings.com/tokens
-| `capabilities`        | *Required* An array of device capabilities to display statuses for. Supported capabilities: "switch", "contactSensor", "lock", "temperatureMeasurement", "relativeHumidityMeasurement", & "motionSensor"
+| `capabilities`        | *Required* An array of device capabilities to display statuses for. Supported capabilities: "switch", "contactSensor", "lock", "temperatureMeasurement", "relativeHumidityMeasurement", "alarm", "doorControl" & "motionSensor"
 | `updateInterval`      | *Optional* The number of milliseconds between updates<br>**Type:** `int`(milliseconds) <br>Default 30000 milliseconds (30 seconds)
 | `title`               | *Optional* The sub-heading title for device list
 | `excludedDeviceNames` | *Optional* An array of device names or strings contained in the device label, can be excluded by containing a given word or the full name. Be more specific if devices you want to see are getting excluded.

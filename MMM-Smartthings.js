@@ -28,8 +28,10 @@ Module.register("MMM-Smartthings", {
 		"temperatureMeasurement"
 		"relativeHumidityMeasurement"
 		"motionSensor"
+		"doorControl"
+		"alarm"
 
-		Other capabilities reference: https://docs.smartthings.com/en/latest/capabilities-reference.html
+		Other capabilities reference: https://developer.smartthings.com/docs/devices/capabilities/capabilities-reference/
 	 */
 
 	requiresVersion: "2.1.0", // Required version of MagicMirror
@@ -112,6 +114,8 @@ Module.register("MMM-Smartthings", {
 					rowClass = `${rowClass} ok`;
 				} else if (device.value === 'unlocked' || device.value === 'open') {
 					iconClass = `${iconClass} zmdi-lock-open`;
+					} else if (device.value === 'both' || device.value === 'strobe'|| device.value === 'siren') {
+					iconClass = `${iconClass} zmdi-alert-circle`;
 					rowClass = `${rowClass} error`;
 				} else if (device.value === 'on') {
 					iconClass = `${iconClass} zmdi-power`;

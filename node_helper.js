@@ -77,6 +77,12 @@ module.exports = NodeHelper.create({
 				case 'motionSensor':
 					statusType = deviceStatus.motion.value;
 					break;
+				case 'doorControl':
+					statusType = deviceStatus.door.value;
+					break;
+				case 'alarm':
+				statusType = deviceStatus.alarm.value;					
+					break;
 
 			}
 
